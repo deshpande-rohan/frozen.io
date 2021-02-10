@@ -1,0 +1,79 @@
+.footer {
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-icon {
+    width: 60px;
+    height: 60px;
+    padding: 1rem 1.5rem;
+    fill: $color-primary;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}
+
+.media {
+  &-yt:hover {
+    fill: red;
+  }
+  &-inst:hover {
+    fill: rgb(177, 41, 87);
+  }
+  &-wh:hover {
+    fill: green;
+  }
+  &-fb:hover {
+    fill: royalblue;
+  }
+}
+
+.name {
+  font-family: $font-secondary;
+  font-size: 5.2rem;
+  color: $color-primary;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-yellow-light;
+  }
+
+  &-icon {
+    width: 50px;
+    height: 50px;
+    transform: translateY(0.8rem);
+    margin: 0 0.6rem;
+    fill: $color-primary;
+    transition: all 0.3s;
+  }
+}
+
+.navigations {
+  font-family: inherit;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  color: $color-primary;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $color-yellow-light;
+  }
+}

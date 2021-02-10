@@ -1,0 +1,35 @@
+.count {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(../img/count-back.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  // transform: skewY(-1deg);
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $color-grey-light-3;
+  }
+}
+
+.box {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.numbers {
+  letter-spacing: 1.2px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
