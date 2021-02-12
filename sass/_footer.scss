@@ -16,6 +16,11 @@
     &:hover {
       transform: scale(1.4);
     }
+
+    @media only screen and(max-width: $bp-smallest) {
+      width: 55px;
+      height: 55px;
+    }
   }
 }
 
@@ -54,6 +59,25 @@
     margin: 0 0.6rem;
     fill: $color-primary;
     transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 40px;
+      height: 40px;
+      transform: translateY(0.5rem);
+    }
+
+    @media only screen and(max-width: $bp-smallest) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    font-size: 3rem;
   }
 }
 
@@ -64,6 +88,16 @@
   font-size: 2rem;
   display: flex;
   color: $color-primary;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .nav-item {
@@ -75,5 +109,13 @@
 
   &:hover {
     color: $color-yellow-light;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 1rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    padding: 1rem;
   }
 }

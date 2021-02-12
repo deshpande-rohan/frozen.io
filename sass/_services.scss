@@ -6,6 +6,10 @@
 
   &__text {
     margin-top: 7rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-top: 4rem;
+    }
   }
 
   &__cards {
@@ -16,6 +20,29 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3rem;
     grid-column-gap: 5rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 3rem auto;
+      grid-column-gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 80%;
+    }
+
+    @media only screen and(max-width: $bp-medium) {
+      margin: 5rem auto;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+      width: 50%;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100vw;
   }
 }
 
@@ -23,12 +50,22 @@
   content: "";
   width: 60rem;
   height: 60rem;
-  background-color: rgb(180, 91, 198);
+  background-color: rgb(207, 123, 222);
   position: absolute;
   top: -18rem;
   left: -17rem;
   border-radius: 50%;
   z-index: -10;
+
+  @media only screen and (max-width: $bp-medium) {
+    top: -26rem;
+    left: -19rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    top: -18rem;
+    left: -17rem;
+  }
 }
 
 .services::after {
@@ -45,11 +82,16 @@
   bottom: -18rem;
   border-radius: 50%;
   z-index: -10;
-}
 
-.icon-leaf {
-  width: 2rem;
-  height: 2rem;
+  @media only screen and (max-width: $bp-medium) {
+    right: -18rem;
+    bottom: -18rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    right: -13rem;
+    bottom: -16rem;
+  }
 }
 
 .card {
@@ -70,10 +112,37 @@
     font-size: 1.3rem;
     font-weight: 400;
   }
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 .icon {
   margin: 1rem;
+  transform: translateY(1rem);
+
+  @media only screen and(max-width: $bp-large) {
+    margin: 0.5rem;
+    align-items: center;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    transform: translateY(0.5rem);
+    justify-self: center;
+    align-self: center;
+  }
 }
 
 .icon-leaf {
@@ -81,7 +150,6 @@
   width: 5rem;
   height: 5rem;
   grid-row: 1 / span 2;
-  transform: translateY(1rem);
 }
 
 .icon-truck {
@@ -89,7 +157,6 @@
   width: 5rem;
   height: 5rem;
   grid-row: 1 / span 2;
-  transform: translateY(1rem);
 }
 
 .icon-cake {
@@ -97,7 +164,6 @@
   width: 5rem;
   height: 5rem;
   grid-row: 1 / span 2;
-  transform: translateY(1rem);
 }
 
 .icon-hand {
@@ -105,5 +171,4 @@
   width: 5rem;
   height: 5rem;
   grid-row: 1 / span 2;
-  transform: translateY(1rem);
 }

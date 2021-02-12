@@ -14,6 +14,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 7rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 3rem;
+      grid-column-gap: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0.5rem;
+      grid-column-gap: 3rem;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and(max-width: $bp-smallest) {
+    width: 100vw;
   }
 }
 
@@ -48,6 +66,10 @@
     font-weight: 400;
     text-align: center;
     padding: 2rem;
+
+    @media only screen and(max-width: $bp-small) {
+      padding: 1rem;
+    }
   }
 
   &-intro {
@@ -55,6 +77,10 @@
     font-size: 1.6rem;
     text-align: center;
     padding: 2rem;
+
+    @media only screen and(max-width: $bp-small) {
+      padding: 1rem;
+    }
   }
 
   &:hover {
@@ -62,5 +88,11 @@
     box-shadow: 16px 16px 3px 0px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 16px 16px 3px 0px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 16px 16px 3px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    width: 60%;
+    justify-self: center;
+    margin: 1.5rem 0;
   }
 }

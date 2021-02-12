@@ -9,6 +9,10 @@
   &--light {
     color: $color-white;
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2.7rem;
+  }
 }
 
 .heading-3 {
