@@ -134,6 +134,12 @@
       justify-self: center;
     }
 
+    @media only screen and(max-width: $bp-extra) {
+      width: 90%;
+      height: 56%;
+      justify-self: center;
+    }
+
     @media only screen and(max-width: $bp-smallest) {
       width: 100%;
       height: 46%;
