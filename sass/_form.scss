@@ -38,6 +38,11 @@
       grid-template-rows: repeat(5, 1fr);
       grid-template-columns: 1fr;
     }
+
+    @media only screen and(max-width: $bp-extra) {
+      width: 90%;
+      grid-column-gap: 3rem;
+    }
   }
 
   &__btn-submit {
@@ -50,9 +55,9 @@
     padding: 1.5rem;
   }
 
-  // @media only screen and(max-width: $bp-smallest) {
-  //   width: 100vw;
-  // }
+  @media only screen and(max-width: $bp-smallest) {
+    width: 100vw;
+  }
 }
 
 .large {
