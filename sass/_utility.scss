@@ -12,6 +12,10 @@
 }
 .padding-t-medium {
   padding-top: 3rem;
+
+  @media only screen and(max-width: $bp-largest) {
+    padding-top: 1.5rem;
+  }
 }
 .padding-t-small {
   padding-top: 1.5rem;

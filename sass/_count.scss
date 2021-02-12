@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  // transform: skewY(-1deg);
 
   &__box {
     width: 100%;
@@ -15,18 +14,44 @@
     justify-content: space-evenly;
     align-items: center;
     color: $color-grey-light-3;
+
+    @media only screen and(max-width: $bp-smallest) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    padding: 1rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    width: 100vw;
   }
 }
 
 .box {
   text-align: center;
   padding: 4rem 2rem;
+
+  @media only screen and(max-width: $bp-small) {
+    padding: 2rem 1rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    padding: 1rem 0.5rem;
+  }
 }
 
 .numbers {
   letter-spacing: 1.2px;
   font-size: 3rem;
   font-weight: 500;
+
+  @media only screen and(max-width: $bp-small) {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
 }
 
 .description {

@@ -22,6 +22,13 @@ $color-yellow-light: #fd8900;
 $font-primary: "Lato", sans-serif;
 $font-secondary: "Cinzel", sans-serif;
 
+// BREAKPOINTS
+$bp-largest: 68.75rem; //1100px
+$bp-large: 62.5rem; //1000px
+$bp-medium: 50rem; //800px
+$bp-small: 37.5rem; //600px
+$bp-smallest: 25rem; //400px
+
 *,
 *::after,
 *::before {
@@ -44,5 +51,21 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(3, 100vh) 145vh 40vh 90vh 120vh 50vh;
+  grid-template-rows: repeat(3, 100vh) max-content 40vh 90vh max-content 50vh;
+
+  @media only screen and(max-width: $bp-largest) {
+    grid-template-rows: repeat(3, 100vh) 135vh 40vh 90vh max-content 50vh;
+  }
+
+  @media only screen and(max-width: $bp-large) {
+    grid-template-rows: repeat(3, 100vh) 140vh 40vh 90vh max-content 50vh;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(3, 100vh) max-content 40vh 90vh max-content 50vh;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    grid-template-rows: 100vh repeat(3, max-content) 40vh repeat(2, max-content) 50vh;
+  }
 }
