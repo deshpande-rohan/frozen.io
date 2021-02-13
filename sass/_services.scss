@@ -84,14 +84,19 @@
   z-index: -10;
 
   @media only screen and (max-width: $bp-medium) {
-    right: -18rem;
-    bottom: -18rem;
+    right: -12rem;
+    bottom: -15rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {
-    right: -13rem;
-    bottom: -16rem;
+    right: -17rem;
+    bottom: -21rem;
   }
+
+  // @media only screen and (max-width: $bp-extra-3) {
+  //   right: -13rem;
+  //   bottom: -16rem;
+  // }
 }
 
 .card {

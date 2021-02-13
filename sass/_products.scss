@@ -140,19 +140,19 @@
       justify-self: center;
     }
 
-    @media only screen and (max-width: $bp-extra-2) {
-      width: 102%;
-      height: 43%;
-    }
-
     @media only screen and (max-width: $bp-extra-3) {
       width: 90%;
-      height: 48%;
+      height: 45%;
     }
 
     @media only screen and(max-width: $bp-smallest) {
-      width: 100%;
-      height: 46%;
+      width: 94%;
+      height: 43%;
+    }
+
+    @media only screen and (max-width: $bp-extra-2) {
+      width: 113%;
+      height: 35%;
     }
   }
 
