@@ -57,6 +57,9 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px; }
+  @media only screen and (max-width: 22.5rem) {
+    .heading-4 {
+      font-size: 1.6rem; } }
 
 .header {
   display: flex;
@@ -96,6 +99,10 @@ body {
     .nav_item {
       font-size: 1.5rem;
       padding: 0.6rem; } }
+  @media only screen and (max-width: 33.75rem) {
+    .nav_item {
+      font-size: 1.4rem;
+      padding: 0.5rem; } }
 
 .brand {
   font-size: 2.7rem;
@@ -140,7 +147,7 @@ body {
       width: 30rem; } }
   @media only screen and (max-width: 33.75rem) {
     .search {
-      width: 33rem; } }
+      width: 30rem; } }
 
 .icon-location {
   fill: orangered;
@@ -155,7 +162,7 @@ body {
       left: 30rem; } }
   @media only screen and (max-width: 33.75rem) {
     .icon-location {
-      left: 33rem; } }
+      left: 30rem; } }
 
 .services {
   background-color: #fff8ee;
@@ -487,6 +494,14 @@ body {
         width: 90%;
         height: 56%;
         justify-self: center; } }
+    @media only screen and (max-width: 22.5rem) {
+      .prod-img {
+        width: 102%;
+        height: 43%; } }
+    @media only screen and (max-width: 30rem) {
+      .prod-img {
+        width: 90%;
+        height: 48%; } }
     @media only screen and (max-width: 25rem) {
       .prod-img {
         width: 100%;
@@ -606,6 +621,9 @@ body {
     .numbers {
       font-size: 2.5rem;
       font-weight: 500; } }
+  @media only screen and (max-width: 33.75rem) {
+    .numbers {
+      font-size: 2rem; } }
 
 .description {
   font-size: 1.8rem;
@@ -638,14 +656,14 @@ body {
         grid-column-gap: 5rem;
         grid-row-gap: 4rem;
         padding: 1rem; } }
+    @media only screen and (max-width: 33.75rem) {
+      .form__actual {
+        width: 100%;
+        grid-column-gap: 3rem; } }
     @media only screen and (max-width: 25rem) {
       .form__actual {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr; } }
-    @media only screen and (max-width: 33.75rem) {
-      .form__actual {
-        width: 90%;
-        grid-column-gap: 3rem; } }
   .form__btn-submit {
     display: flex;
     justify-content: center;

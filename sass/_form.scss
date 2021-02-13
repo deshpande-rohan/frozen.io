@@ -34,14 +34,14 @@
       padding: 1rem;
     }
 
+    @media only screen and(max-width: $bp-extra) {
+      width: 100%;
+      grid-column-gap: 3rem;
+    }
+
     @media only screen and(max-width: $bp-smallest) {
       grid-template-rows: repeat(5, 1fr);
       grid-template-columns: 1fr;
-    }
-
-    @media only screen and(max-width: $bp-extra) {
-      width: 90%;
-      grid-column-gap: 3rem;
     }
   }
 

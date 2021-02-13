@@ -43,6 +43,11 @@
     font-size: 1.5rem;
     padding: 0.6rem;
   }
+
+  @media only screen and (max-width: $bp-extra) {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
 }
 
 .brand {
@@ -97,7 +102,7 @@
   }
 
   @media only screen and (max-width: $bp-extra) {
-    width: 33rem;
+    width: 30rem;
   }
 }
 
@@ -115,6 +120,6 @@
   }
 
   @media only screen and (max-width: $bp-extra) {
-    left: 33rem;
+    left: 30rem;
   }
 }
