@@ -101,12 +101,12 @@
     width: 30rem;
   }
 
-  @media only screen and (max-width: $bp-smallest) {
-    width: 30rem;
-  }
-
   @media only screen and (max-width: $bp-extra-2) {
     width: 24rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 26rem;
   }
 }
 
@@ -119,12 +119,12 @@
   left: 40rem;
   cursor: pointer;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-extra) {
     left: 30rem;
   }
 
-  @media only screen and (max-width: $bp-extra) {
-    left: 30rem;
+  @media only screen and (max-width: $bp-smallest) {
+    left: 26rem;
   }
 
   @media only screen and (max-width: $bp-extra-2) {
