@@ -60,7 +60,7 @@ body {
   @media only screen and (max-width: 25rem) {
     .heading-4 {
       font-size: 1.6rem; } }
-  @media only screen and (max-width: 22.5rem) {
+  @media only screen and (max-width: 21.87rem) {
     .heading-4 {
       font-size: 1.6rem; } }
 
@@ -148,7 +148,7 @@ body {
   @media only screen and (max-width: 33.75rem) {
     .search {
       width: 30rem; } }
-  @media only screen and (max-width: 22.5rem) {
+  @media only screen and (max-width: 21.87rem) {
     .search {
       width: 24rem; } }
   @media only screen and (max-width: 25rem) {
@@ -169,7 +169,7 @@ body {
   @media only screen and (max-width: 25rem) {
     .icon-location {
       left: 26rem; } }
-  @media only screen and (max-width: 22.5rem) {
+  @media only screen and (max-width: 21.87rem) {
     .icon-location {
       left: 24rem; } }
 
@@ -500,21 +500,24 @@ body {
         justify-self: center; } }
     @media only screen and (max-width: 33.75rem) {
       .prod-img {
+        margin: 0;
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center;
         width: 90%;
-        height: 56%;
-        justify-self: center; } }
+        height: 60%; } }
     @media only screen and (max-width: 30rem) {
       .prod-img {
-        width: 90%;
-        height: 44%; } }
+        width: 100%;
+        height: 50%; } }
     @media only screen and (max-width: 25rem) {
       .prod-img {
         width: 100%;
-        height: 32%; } }
-    @media only screen and (max-width: 22.5rem) {
+        height: 45%; } }
+    @media only screen and (max-width: 21.87rem) {
       .prod-img {
-        width: 112%;
-        height: 35%; } }
+        width: 100%;
+        height: 32%; } }
   .prod-details {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -833,36 +836,15 @@ input[type="number"] {
     .name {
       font-size: 3rem; } }
 
-.navigations {
-  font-family: inherit;
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  color: #fff8ee; }
-  @media only screen and (max-width: 37.5rem) {
-    .navigations {
-      font-size: 1.5rem; } }
-  @media only screen and (max-width: 25rem) {
-    .navigations {
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; } }
-
-.nav-item {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+.copyright {
+  font-size: 1.6rem;
+  color: #fff8ee;
   font-weight: 300;
-  cursor: pointer;
-  transition: all 0.3s; }
-  .nav-item:hover {
-    color: #fd8900; }
-  @media only screen and (max-width: 37.5rem) {
-    .nav-item {
-      padding: 0 1rem; } }
-  @media only screen and (max-width: 25rem) {
-    .nav-item {
-      padding: 1rem; } }
-  @media only screen and (max-width: 30rem) {
-    .nav-item {
-      padding: 0.5rem; } }
+  text-align: center; }
+
+span {
+  transition: all 0.3s linear; }
+
+span:hover {
+  background-color: #fff8ee;
+  color: #000; }
